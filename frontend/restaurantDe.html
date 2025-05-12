@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <link rel="stylesheet" href="queries.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+   
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <img src="images/menuIcon.png" alt="" id="menuIcon">
+            <div class="menu--small--buttons">
+                <a href="bookNowDe.html" id="bookNow">Jetzt buchen</a>
+            </div> 
+            <a href="index.html" class="logo"><img src="images/logoWhite.png" alt="Logo"></a>
+            <ul>
+                <li><a href="indexDe.html" >Startseite</a></li>
+                <li><a href="restaurantDe.html" class="currently">Restaurant</a></li>
+                <li><a href="contactDe.html">Kontakt</a></li>
+                <li><a href="locationDe.html">Lage</a></li>
+                <li><a href="bookNowDe.html" id="bookNow">Jetzt buchen</a></li>
+                <li><a href="restaurant.html"><img src="images/UkFlaf.jpg" alt=""></a></li>
+            </ul>
+        </nav>
+        <div class="presentation" id="restaurant"></div>
+        <div class="menu--small">
+            <ul>
+                <li><a href="indexDe.html">Startseite</a></li>
+                <li><a href="restaurantDe.html">Restaurant</a></li>
+                <li><a href="contactDe.html">Kontakt</a></li>
+                <li><a href="locationDe.html">Lage</a></li>
+                <li><a href="restaurant.html"><img src="images/UkFlaf.jpg" alt=""></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="welcome container">
+            <h1 class="scroll-element">RESTAURANT IN DEN <br>ALPINE APARTMENTS</h1>
+            
+            <p class="scroll-element">Willkommen in unserem eleganten Restaurant in den Alpine Apartments, wo moderne Küche auf traditionelle alpine Einflüsse trifft. Unser Menü wird sorgfältig aus frischen, lokalen Zutaten zusammengestellt und bietet authentische und köstliche Gerichte. Genießen Sie ein einzigartiges kulinarisches Erlebnis in einer angenehmen Umgebung mit Panoramablick auf die Tiroler Alpen, die die perfekte Atmosphäre für romantische Abendessen, Familientreffen oder besondere Anlässe schafft.</p>
+
+            <p class="scroll-element">Unsere talentierten Köche sind bereit, selbst die anspruchsvollsten Gourmets mit ihren kreativen und sorgfältig zubereiteten Gerichten zu begeistern. Für Weinliebhaber bieten wir eine große Auswahl an hochwertigen lokalen und internationalen Weinen, die jedes Gericht perfekt ergänzen.</p>
+
+            <p class="scroll-element">Das Restaurant ist mit Liebe zum Detail und Komfort gestaltet, mit bequemen Sitzgelegenheiten und geschmackvoller Dekoration, die die Schönheit der umliegenden Natur widerspiegelt. Nach dem Abendessen können Sie Dessert oder eine Tasse Kaffee in unserer angrenzenden Lounge genießen, wo Sie sich nach einem Tag voller Erkundungen der Schönheiten von Sölden entspannen können. Unser professionelles und freundliches Personal steht Ihnen zur Verfügung, um Ihnen erstklassigen Service zu bieten und sicherzustellen, dass Ihr kulinarisches Erlebnis unvergesslich wird.</p>
+
+            <p class="scroll-element">Unser Restaurant ist täglich von 10:00 bis 24:00 Uhr geöffnet.</p>
+
+        </div>
+
+        <div class="gallery scroll-element">
+            <div class="slideshow">
+                <img src="images/food1.jpg" alt="Essen 1">
+                <img src="images/food2.jpg" alt="Essen 2">
+                <img src="images/food3.jpg" alt="Essen 3">
+                <img src="images/food4.jpg" alt="Essen 4">
+                <img src="images/food5.jpg" alt="Essen 5">
+                <img src="images/food6.jpg" alt="Essen 6">
+                <img src="images/food7.jpg" alt="Essen 7">
+            </div>
+        </div>
+
+        <div class="bar scroll-element">
+            <img src="images/bar.jpg" alt="Bar">
+            <div class="bar--text">
+                <h2>COCKTAILBAR</h2>
+                <p id="reservation--link">Besuchen Sie unsere stilvolle Bar in den Alpine Apartments, wo Sie eine große Auswahl an hochwertigen Getränken in einem eleganten Ambiente genießen können. Wir bieten eine vielfältige Auswahl an Cocktails, lokalen und internationalen Weinen, Bieren und Spirituosen, perfekt zum Entspannen nach einem Tag auf der Piste oder beim Erkunden der umliegenden Schönheit. Unser aufmerksames Personal ist bereit, Ihre Wünsche zu erfüllen und sicherzustellen, dass Ihr Abend unvergesslich wird.</p>
+            </div>
+        </div>
+        
+        <div class="reservation scroll-element">
+            <h2>RESERVIERUNG</h2>
+            <form action="" class="reservation--form" id="customForm">
+                <input type="text" id="name" name="name" placeholder="Vollständiger Name" required>
+                <input type="email" id="email" name="email" required placeholder="E-Mail">
+                <input type="tel" id="phone" name="phone" required placeholder="Telefon">
+                
+                <input type="text" id="reservation-date" name="date" required placeholder="Datum auswählen">
+                <input type="text" id="reservation-time" name="time" required placeholder="Uhrzeit auswählen">
+
+                <select name="guest" id="Number" required>
+                    <option value="" disabled selected hidden>Anzahl der Gäste</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+                <button type="submit">RESERVIERUNG VORNEHMEN</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footer--text">
+            <div class="footer--column-column1">
+                <a href="TaCDE.html">Allgemeine Geschäftsbedingungen</a>
+                <a href="TaCDE.html#PaP--link">Datenschutzerklärung</a>
+                <a href="https://www.soelden.com/en/live-information/livecams" target="_blank">Webkamera</a>
+                <a href="https://www.soelden.com/en/live-information/weather" target="_blank">Wetter</a>
+                <a href="#">Karriere</a>
+            </div>
+
+            <div class="footer--column-column2">
+                <p>Alpine Apartments <br>
+                B186 148, Sölden, Österreich</p> 
+                <p>info@alpineapartments.com <br>
+                +43 4444 88888</p>
+            </div>
+
+            <div class="footer--column-column3">
+                <h4>FOLGEN SIE UNS</h4>
+                <div class="footer--socials">
+                    <a href="https://www.facebook.com/" class="facebook" target="_blank"><img src="images/facebook.png" alt="Facebook-Logo"></a>
+                    <a href="https://www.instagram.com/" class="instagram" target="_blank"><img src="images/instagram.png" alt="Instagram-Logo"></a>
+                    <a href="https://www.whatsapp.com/" class="whatsapp" target="_blank"><img src="images/whatsapp.png" alt="WhatsApp-Logo"></a>
+                </div>
+
+                <p id="copyright">&copy;2020 - 2025 AlipneApartments.com</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="js/api.js" defer></script>
+    <script src="js/script.js" defer></script>
+</body>
+</html>

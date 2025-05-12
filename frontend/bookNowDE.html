@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jetzt buchen</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="queries.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+   <header>
+        <nav>
+            <img src="images/menuIcon.png" alt="" id="menuIcon">
+            <div class="menu--small--buttons">
+                <a href="bookNowDe.html" id="bookNow">Jetzt buchen</a>
+            </div> 
+            <a href="index.html" class="logo"><img src="images/logoWhite.png" alt="Logo"></a>
+            <ul>
+                <li><a href="indexDe.html" >Startseite</a></li>
+                <li><a href="restaurantDe.html">Restaurant</a></li>
+                <li><a href="contactDe.html">Kontakt</a></li>
+                <li><a href="locationDe.html">Lage</a></li>
+                <li><a href="bookNowDe.html" id="bookNow">Jetzt buchen</a></li>
+                <li><a href="bookNow.html"><img src="images/UkFlaf.jpg" alt=""></a></li>
+            </ul>
+        </nav>
+        <div class="presentation" id="bookNow--header"></div>
+        <div class="menu--small">
+            <ul>
+                <li><a href="indexDe.html">Startseite</a></li>
+                <li><a href="restaurantDe.html">Restaurant</a></li>
+                <li><a href="contactDe.html">Kontakt</a></li>
+                <li><a href="locationDe.html">Lage</a></li>
+                <li><a href="bookNow.html"><img src="images/UkFlaf.jpg" alt=""></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="scroll-element bookNow--title">BUCHEN SIE IHR ZIMMER</h1>
+        <form action="" class="bookForm">
+            <div class="personalData scroll-element">
+                <input type="text" placeholder="Vorname" required id="bookForm--firstName">
+                <input type="text" placeholder="Nachname" required id="bookForm--lastName">
+                <input type="email" placeholder="EMail" required id="bookForm--email">
+                <select name="" id="bookForm--countryCode">
+                    <option value="+355">ALB (+355)</option>
+                    <option value="+374">ARM (+374)</option>
+                    <option value="+43">AUT (+43)</option>
+                    <option value="+994">AZE (+994)</option>
+                    <option value="+375">BLR (+375)</option>
+                    <option value="+32">BEL (+32)</option>
+                    <option value="+387">BIH (+387)</option>
+                    <option value="+359">BGR (+359)</option>
+                    <option value="+357">CYP (+357)</option>
+                    <option value="+420" selected>CZE (+420)</option>
+                    <option value="+45">DNK (+45)</option>
+                    <option value="+33">FRA (+33)</option>
+                    <option value="+995">GEO (+995)</option>
+                    <option value="+49">DEU (+49)</option>
+                    <option value="+30">GRC (+30)</option>
+                    <option value="+36">HUN (+36)</option>
+                    <option value="+353">IRL (+353)</option>
+                    <option value="+39">ITA (+39)</option>
+                    <option value="+7">KAZ (+7)</option>
+                    <option value="+383">XKX (+383)</option>
+                    <option value="+382">MNE (+382)</option>
+                    <option value="+389">MKD (+389)</option>
+                    <option value="+31">NLD (+31)</option>
+                    <option value="+351">PRT (+351)</option>
+                    <option value="+40">ROU (+40)</option>
+                    <option value="+7">RUS (+7)</option>
+                    <option value="+381">SRB (+381)</option>
+                    <option value="+421">SVK (+421)</option>
+                    <option value="+34">ESP (+34)</option>
+                    <option value="+46">SWE (+46)</option>
+                    <option value="+41">CHE (+41)</option>
+                    <option value="+90">TUR (+90)</option>
+                    <option value="+380">UKR (+380)</option>
+                    <option value="+44">GBR (+44)</option>
+                    <option value="+1">USA (+1)</option>
+                </select>
+                <input type="text" placeholder="Telefonnummer" required id="bookForm--phone">
+            </div>
+
+            <div class="adressData scroll-element">
+                <input type="text" placeholder="Stadt" required id="bookForm--city">
+                <input type="text" placeholder="Straße" required id="bookForm--street">
+                <input type="text" placeholder="Postleitzahl" required id="bookForm--postalCode">
+                <select name="" id="bookForm--country">
+                    <option value="ALB">Albania</option>
+                        <option value="ARM">Armenia</option>
+                        <option value="AUT">Austria</option>
+                        <option value="AZE">Azerbaijan</option>
+                        <option value="BLR">Belarus</option>
+                        <option value="BEL">Belgium</option>
+                        <option value="BGR">Bulgaria</option>
+                        <option value="CYP">Cyprus</option>
+                        <option value="CZE" selected>Czech Republic</option>
+                        <option value="DNK">Denmark</option>
+                        <option value="FRA">France</option>
+                        <option value="GEO">Georgia</option>
+                        <option value="DEU">Germany</option>
+                        <option value="GRC">Greece</option>
+                        <option value="HUN">Hungary</option>
+                        <option value="IRL">Ireland</option>
+                        <option value="ITA">Italy</option>
+                        <option value="KAZ">Kazakhstan</option>
+                        <option value="XKX">Kosovo</option>
+                        <option value="MNE">Montenegro</option>
+                        <option value="MKD">North Macedonia</option>
+                        <option value="NLD">Netherlands</option>
+                        <option value="PRT">Portugal</option>
+                        <option value="ROU">Romania</option>
+                        <option value="RUS">Russia</option>
+                        <option value="SRB">Serbia</option>
+                        <option value="SVK">Slovakia</option>
+                        <option value="ESP">Spain</option>
+                        <option value="SWE">Sweden</option>
+                        <option value="CHE">Switzerland</option>
+                        <option value="TUR">Turkey</option>
+                        <option value="UKR">Ukraine</option>
+                        <option value="GBR">United Kingdom</option>
+                        <option value="USA">United States</option>
+                </select>
+            </div>
+
+            <div class="accomodationdata scroll-element">
+                <input type="text" id="bookForm--checkInDate" placeholder="Anreisedatum" required>
+                <input type="text" id="bookForm--checkOutDate" placeholder="Abreisedatum" required>
+                
+                <select name="" id="numberOfGuests">
+                    <option value="" disabled selected hidden>Anzahl der Gäste</option>
+                    <option value="1">1 Gast</option>
+                    <option value="2">2 Gäste</option>
+                    <option value="3">3 Gäste</option>
+                    <option value="4">4 Gäste</option>
+                    <option value="5">5 Gäste</option>
+                    <option value="6">6 Gäste</option>
+                </select>
+                <div class="checkbox--grid">
+                    <input type="checkbox" id="bookForm--checkBox" required>
+                    <p id="bookForm--checkBox-label"> Ich stimme den <a href="TaCDE.html">Allgemeinen Geschäftsbedingungen</a> zu</p>
+
+                    <input type="checkbox" id="bookForm--checkBox2" required>
+                    <p id="bookForm--checkBox-label2">Ich stimme der <a href="TaCDE.html#PaP--link">Datenschutzerklärung</a> zu</p>
+                </div>
+            </div>
+
+            <p id="form--price-text" class="scroll-element">Der Preis für die Unterkunft beträgt 70 EUR pro Nacht und Person. Die Zahlung erfolgt vor Ort, entweder in bar oder mit Kreditkarte. Vielen Dank für Ihr Verständnis, wir freuen uns auf Ihren Besuch!</p>
+            <input type="submit" value="Buchen Sie Ihr Zimmer" id="bookForm--submit" class="scroll-element">
+        </form>
+
+        <div class="gallery--bookForm">
+            <div class="gallery--grid">
+                <img src="images/room1.png" alt="Zimmer 1" id="image-room1" class="zoomable scroll-element">
+                <img src="images/room2.png" alt="Zimmer 2" id="image-room2" class="zoomable scroll-element">
+                <img src="images/room3.png" alt="Zimmer 3" id="image-room3" class="zoomable scroll-element">
+                <img src="images/bathroom.png" alt="Badezimmer" id="image-bathroom" class="zoomable scroll-element">
+                <img src="images/pool.jpg" alt="Pool" id="image-pool" class="zoomable scroll-element">
+                <img src="images/restaurant2.png" alt="Restaurant" id="image-restaurant" class="zoomable scroll-element">
+                <img src="images/summer1.png" alt="Sommer 1" id="image-summer1" class="zoomable scroll-element">
+                <img src="images/summer2.png" alt="Sommer 2" id="image-summer2" class="zoomable scroll-element">
+                <img src="images/summer3.png" alt="Sommer 3" id="image-summer3" class="zoomable scroll-element">
+                <img src="images/winter1.png" alt="Winter 1" id="image-winter1" class="zoomable scroll-element">
+                <img src="images/winter2.png" alt="Winter 2" id="image-winter2" class="zoomable scroll-element">
+                <img src="images/winter3.png" alt="Winter 3" id="image-winter3" class="zoomable scroll-element">
+                <img src="images/alps1.jpg" alt="Alpen 1" id="image-alps1" class="zoomable scroll-element">
+                <img src="images/alps2.jpg" alt="Alpen 2" id="image-alps2" class="zoomable scroll-element">
+                <img src="images/alps3.jpg" alt="Alpen 3" id="image-alps3" class="zoomable scroll-element">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer--text">
+            <div class="footer--column-column1">
+                <a href="TaCDE.html">Allgemeine Geschäftsbedingungen</a>
+                <a href="TaCDE.html#PaP--link">Datenschutzerklärung</a>
+                <a href="https://www.soelden.com/en/live-information/livecams" target="_blank">Webkamera</a>
+                <a href="https://www.soelden.com/en/live-information/weather" target="_blank">Wetter</a>
+                <a href="#">Karriere</a>
+            </div>
+
+            <div class="footer--column-column2">
+                <p>Alpine Apartments <br>
+                B186 148, Sölden, Österreich</p> 
+                <p>info@alpineapartments.com <br>
+                +43 4444 88888</p>
+            </div>
+
+            <div class="footer--column-column3">
+                <h4>FOLGEN SIE UNS</h4>
+                <div class="footer--socials">
+                    <a href="https://www.facebook.com/" class="facebook" target="_blank"><img src="images/facebook.png" alt="Facebook-Logo"></a>
+                    <a href="https://www.instagram.com/" class="instagram" target="_blank"><img src="images/instagram.png" alt="Instagram-Logo"></a>
+                    <a href="https://www.whatsapp.com/" class="whatsapp" target="_blank"><img src="images/whatsapp.png" alt="WhatsApp-Logo"></a>
+                </div>
+
+                <p id="copyright">&copy;2020 - 2025 AlipneApartments.com</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="js/api.js" defer></script>
+    <script src="js/script.js" defer></script>
+</body>
+</html>

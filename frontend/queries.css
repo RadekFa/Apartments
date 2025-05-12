@@ -1,0 +1,1955 @@
+body {
+    box-sizing: border-box;
+    background: white;
+    margin: 0;
+}
+
+:root{
+    --primary-color: #555555;
+    --secondary-color: #212121;
+    --form-primary: #c9c9c955;
+    --form-secondary: #f1f1f1;
+    --form-light: rgb(204, 204, 204);
+}
+
+@media screen and (max-width: 1793px) {
+    /*HEADER*/
+    nav ul li {
+        margin: 0 50px;
+        margin-top: 20px;
+    }
+    nav ul{
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 1640px) {
+    nav ul li {
+        margin: 0 50px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 1530px) {
+    .location--winter{
+        width: 98%;
+    }
+.location--summer {
+        width: 98%;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .location--winter{
+        width: 98%;
+    }
+    .location--buttons{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 20px;
+        grid-column-gap: 50px;
+        align-items: center;
+        justify-items: center;
+        width: 100%;
+        grid-column-end: 3;
+    }
+    .location--buttons-winter{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 20px;
+        grid-column-gap: 50px;
+        align-items: center;
+        justify-items: center;
+        width: 100%;
+    }
+    #biking, #skiing{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        margin: 0;
+    }
+    #hiking, #snowboarding{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        margin: 0;
+    }
+    #climbing, #apres-ski{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        margin: 0;
+    }
+    #guided-tour, #tobogganing{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        margin: 0;
+    }
+
+
+    .bookForm{
+        width: 85%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns:1fr 414px 414px 1fr;
+        grid-template-rows: 300px 270px 200px;
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 50px;
+    }
+    .personalData{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .adressData{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .accomodationdata{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        width: 414px;
+    }
+
+    #bookForm--submit{
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        margin-top: 30px;
+    }
+    #form--price-text{
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    #bookForm--lastName, #bookForm--firstName{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    
+
+#TaC--text, #PaP--text{
+    text-align: center;
+    width: 100%;
+    color: var(--secondary-color);
+    background: white;
+    margin-top: 100px;
+}
+
+#TaC--text h2, #PaP--text h2{
+    width: 90%;
+}   
+#TaC--text h4, #PaP--text h4{
+    width: 90%;
+}
+#TaC--text p, #PaP--text p{
+    width: 90%;
+   
+}
+
+.location--content-text{
+    margin-left: 10%;
+    
+}
+
+}
+
+@media screen and (max-width: 1480px){
+    .reviews{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 50px;
+        width: 90%;
+    }
+    /*HEADER*/
+    .logo{
+        display: none;
+    }
+    nav ul{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    }
+
+@media screen and (max-width: 1400px) {
+    
+    
+
+    /*FOOTER*/
+    footer{
+        height: 480px;
+
+    }
+    .footer--text{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        justify-content: space-around;
+        align-content: space-around;
+    }
+    .footer--column-column1{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        margin-top: 50px;
+    }
+    .footer--column-column2{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        margin-top: 50px;
+    }
+    .footer--column-column3{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        margin-top: 50px;
+    }
+    .location--buttons-winter{
+        grid-row-gap: 20px;
+        grid-column-gap: 50px;
+        align-items: center;
+        justify-items: center;
+    }
+    
+    .contact--grid{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 250px 400px; 
+        width: 95%;
+        height: 650px;
+        grid-column-gap: 20px;
+    }
+
+    .contact--text{
+        margin-left: 0;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        width: 95%;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .location--contact{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        width: 100%;
+        margin: 0 auto;
+        height: 400px;
+        border-radius: 0 0 10px 10px;
+    }
+    .details{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        padding: 0;
+    }
+
+    .rooms--text p{
+        color: white;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+        width: 90%;
+        font-weight: 200;
+        text-align: justify;
+    }   
+    
+    .bar--text p{
+        font-size: 20px;
+        width: 90%;
+        text-align: justify;
+    }
+
+    .bar--text h2{
+        text-align: left;
+        width: 90%;
+    }
+
+    .restaurant--text p {
+
+        font-size: 20px;
+        width: 90%;
+        text-align: justify;
+        margin-left: 20px;
+    }
+
+    .location--content{
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    #admin--main{
+        width: 95%;
+    }
+
+}
+
+
+@media screen and (max-width: 1340px){
+    .container{
+        width: 100%;
+    }
+    
+    .location{
+        width: 95%;
+    }
+}
+
+
+@media screen and (max-width: 1270px){
+    .location--winter{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 200px 0px 600px;
+        width: 95%;
+        background: var(--secondary-color);
+        height: 900px;
+        border-radius: 5px;
+        align-items: center;
+        justify-items: center;
+    }
+    .location--summer {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 200px 0px 600px;
+        width: 95%;
+        background: var(--secondary-color);
+        height: 900px;
+        border-radius: 5px;
+        align-items: center;
+        justify-items: center;
+    }
+    .welcome--location {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    #location--logo--winter{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        position: relative;
+        top: -15px;
+    }
+    #location--logo {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        position: relative;
+        top: -15px;
+    }
+    #skiing--image, #snowboarding--image, #apres-ski--image, #tobogganing--image{
+        top: -15px;
+    }
+    #mtb, #hiking--image, #climbing--image, #guided--image {
+        top: -15px;
+    }
+
+    .location--winter h2{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .location--summer h2 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .location--winter p{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        text-align: justify;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+    }
+    .location--summer p {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        text-align: justify;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+    }
+
+    .location--buttons-winter{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-row-gap: 20px;
+        grid-column-gap: 30px;
+        align-items: center;
+        align-self: start;
+        margin-top: 130px;
+    }
+    .location--buttons {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-row-gap: 20px;
+        grid-column-gap: 30px;
+        align-items: center;
+        align-self: start;
+        margin-top: 130px;
+    }
+    #skiing--text, #snowboarding--text, #apres-ski--text, #tobogganing--text{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 300px;
+        align-self: start;
+        width: 90%;
+    }
+    #mtb--text, #hiking--text, #climbing--text, #guided--text {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 300px;
+        align-self: start;
+        width: 90%;
+    }
+
+    .location--winter img{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    .location--summer img {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    .location--summer a {
+        width: 170px;
+        margin: 0;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    #biking, #skiing{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    #hiking, #snowboarding{
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+    #climbing, #apres-ski{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    #guided-tour, #tobogganing{
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+}
+
+
+@media screen and (max-width: 1230px){
+     /*HEADER*/
+    nav{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 80px;
+    }
+    .logo {
+        display: block;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        z-index: 100;
+    }
+    nav ul{
+        display: none;
+    }
+    #menuIcon{
+        display: block;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .menu--small--buttons{
+        display: block;
+    }
+    .menu--small{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .rooms{
+        grid-template-columns: 550px 1fr;
+        height: 350px;
+    }
+    .bar{
+        grid-template-columns: 550px 1fr;
+        height: 350px;
+    }
+    .rooms img{
+        margin-top: 0;
+        height: 350px; 
+    }
+    .rooms--text a {
+        margin-top: 20px;  
+    }
+    .pool--text p{
+        font-size: 20px;
+    }
+
+    .restaurant{
+        grid-template-columns:  1fr 550px;
+        height: 350px;
+    }
+    .restaurant img{
+        margin-top: 0;
+        height: 350px; 
+        margin-left: auto;
+    }
+    .restaurant--text a {
+        margin-top: 20px;  
+    }
+    .restaurant--text p{
+        font-size: 20px;
+    }
+    .location--content{
+        width: 95%;
+        margin: 0 auto;
+        grid-template-columns: 60% 1fr;
+    }
+    .location{
+        
+         margin-left: auto;
+         margin-right: auto;
+    }
+    .location--content-text{
+        width: 90%;
+        text-align: justify;
+        margin-left: 0;
+    }
+
+    .gallery--grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        width: 98%;
+    }
+    
+    #image-room1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #image-room2 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #image-room3 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #image-bathroom {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #image-pool {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #image-restaurant {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #image-summer1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #image-summer2 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #image-summer3 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #image-winter1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #image-winter2 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #image-winter3 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #image-alps1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 6;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #image-alps2 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 5;
+        grid-row-end: 6;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #image-alps3 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 5;
+        grid-row-end: 6;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+
+@media screen and (max-width: 1170px) {
+   
+
+    
+    .bookForm{
+        width: 85%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 414px 1fr; 
+        grid-template-rows: 300px 300px 300px 260px;
+        margin-top: 50px;
+        gap: 0;
+    }
+    .personalData{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .adressData{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        
+    }
+    .accomodationdata{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    #bookForm--submit{
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        align-self: end;
+    }
+    #form--price-text{
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        margin-top: 40px;
+        text-align: justify;
+    }
+
+    #bookForm--lastName, #bookForm--firstName{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .reviews{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            width: 80%;
+    }
+    .review--column1{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        border: 2px solid #2121214a;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 1px 1px 5px 1px #2121214a;
+    }
+    .review--column2{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        border: 2px solid #2121214a;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 1px 1px 5px 1px #2121214a;
+    }
+    .review--column3{
+        display: none;
+    }
+    .menu--small{
+        display: block;
+    }
+}
+
+
+
+
+@media screen and (max-width: 990px){
+    .location{
+         height: 700px;
+         margin-bottom: 200px;
+         margin-left: auto;
+         margin-right: auto;
+    }
+     .location--content{
+         width: 95%;
+         height: 800px;
+         grid-template-columns: 1fr;
+         grid-template-rows: 300px 500px;
+     }
+     
+     .location--content-text{
+         width: 100%;
+         text-align: justify;
+         grid-column-start: 1;
+         grid-column-end: 2;
+         grid-row-start: 1;
+         grid-row-end: 2;
+     }
+     .location--content iframe{
+         grid-row-start: 2;
+         grid-row-end: 3;
+         grid-column-start: 1;
+         grid-column-end: 2;
+         height: 400px;
+     }
+     .location--content-text a{ 
+         margin-top: 30px; 
+         margin-left: auto;
+         margin-right: auto;
+         
+     }
+     .location--content-text h2{
+         text-align: center;
+     }
+ 
+     .rooms{
+         grid-template-columns: 1fr;
+         grid-template-rows: 1fr 1fr;
+         height: 900px;
+     }
+     .rooms img{
+         grid-column-start: 1;
+         grid-column-end: 2;
+         width: 100%;
+         height: auto;
+         grid-row-start: 2;
+         grid-row-end: 3;
+         align-self: end;
+     }
+     .rooms--text{
+         grid-column-start: 1;
+         grid-column-end: 2;
+         grid-row-start: 1;
+         grid-row-end: 2;
+         width: 90%;
+         margin: 0 auto;
+         text-align: justify;
+     }
+     .rooms--text p{
+         width: 100%;
+     }
+     .rooms--text h2{
+         text-align: center;
+         margin-top: 20px;
+     }
+     .rooms--text a{
+         margin-left: auto;
+         margin-right: auto;
+     }
+ 
+ 
+     .bar{
+         grid-template-columns: 1fr;
+         grid-template-rows: 1fr 1fr;
+         height: 900px;
+     }
+     .bar img{
+         grid-column-start: 1;
+         grid-column-end: 2;
+         width: 100%;
+         grid-row-start: 2;
+         grid-row-end: 3;
+         align-self: end;
+     }
+     .bar--text{
+         grid-column-start: 1;
+         grid-column-end: 2;
+         grid-row-start: 1;
+         grid-row-end: 2;
+         width: 90%;
+         margin: 0 auto;
+         text-align: justify;
+     }
+     .bar--text p{
+         width: 100%;
+     }
+     .bar--text h2{
+         text-align: center;
+         margin-top: 20px;
+     }
+ 
+     .restaurant{
+         grid-template-columns: 1fr;
+         grid-template-rows: 1fr 1fr;
+         height: 900px;
+     }
+     .restaurant img{
+         grid-column-start: 1;
+         grid-column-end: 2;
+         width: 100%;
+         height: auto;
+         grid-row-start: 2;
+         grid-row-end: 3;
+         align-self: end;
+     }
+     .restaurant--text{
+         grid-column-start: 1;
+         grid-column-end: 2;
+         grid-row-start: 1;
+         grid-row-end: 2;
+         width: 90%;
+         margin: 0 auto;
+         text-align: justify;
+     }
+     .restaurant--text p{
+         width: 100%;
+         margin: 0;
+     }
+     .restaurant--text h2{
+         text-align: center;
+         margin-top: 20px;
+         margin-bottom: 20px;
+         margin-left: 0;
+         margin-right: 0;
+     }
+     .restaurant--text a{
+         margin-left: auto;
+         margin-right: auto;
+     }
+     .pool--text p{
+         width: 90%;
+     }
+ }
+
+@media screen and (max-width: 950px) {
+    .location--winter{
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 200px 150px 200px 600px;
+        width: 95%;
+        background: var(--secondary-color);
+        height: 1250px;
+        border-radius: 5px;
+        align-items: center;
+        justify-items: center;
+    }
+.location--summer {
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 200px 150px 200px 600px;
+        width: 95%;
+        background: var(--secondary-color);
+        height: 1250px;
+        border-radius: 5px;
+        align-items: center;
+        justify-items: center;
+    }
+
+    #location--logo--winter{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+#location--logo {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+
+    .location--winter h2{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+.location--summer h2 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .location--winter p{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        text-align: justify;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+.location--summer p {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        text-align: justify;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+
+    .location--buttons-winter{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: 0;
+        grid-row-gap: 20px;
+        grid-column-gap: 50px;
+        align-self: center;
+    }
+.location--buttons {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: 0;
+        grid-row-gap: 20px;
+        grid-column-gap: 50px;
+        align-self: center;
+    }
+    #skiing--text, #snowboarding--text, #apres-ski--text, #tobogganing--text{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+#mtb--text, #hiking--text, #climbing--text, #guided--text {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+
+    #apres-ski, #tobogganing{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    #tobogganing{
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+#biking, #hiking {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    #hiking {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    
+    #skiing, #snowboarding{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    #snowboarding{
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+#climbing, #guided-tour {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    #guided-tour {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+   
+    .location--winter img{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+.location--summer img {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+    #skiing--text, #snowboarding--text, #apres-ski--text, #tobogganing--text{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+#mtb--text, #hiking--text, #climbing--text, #guided--text {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .location--winter img{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+.location--summer img {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+    .contact--grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 200px 400px; 
+        width: 95%;
+        height: 750px;
+        padding: 0;
+    }
+
+    .welcome--contact p{
+        margin-left: auto;
+        margin-right: auto;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        width: 90%;
+    }
+
+    .location--contact{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        width: 98%;
+        margin: 0 auto;
+        height: 400px;
+        border-radius: 0 0 10px 10px;
+    }
+    .details{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .menu--small--buttons{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .TaC--text p, .PaP--text p, .TaC--text h4, .PaP--text h4, .TaC--text h2, .PaP--text h2{
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 900px){
+    .logo{
+        display: none;
+    }
+    .menu--small--buttons{
+        margin-right: 30px;
+        margin-left: auto;
+    }
+
+    .gallery--grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        width: 98%;
+        gap: 15px;
+    }
+    
+    #image-room1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #image-room2 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #image-room3 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #image-bathroom {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #image-pool {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #image-restaurant {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #image-summer1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #image-summer2 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #image-summer3 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 6;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #image-winter1 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 5;
+        grid-row-end: 6;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #image-winter2 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 6;
+        grid-row-end: 7;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #image-winter3 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 6;
+        grid-row-end: 7;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #image-alps1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 7;
+        grid-row-end: 8;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #image-alps2 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 7;
+        grid-row-end: 8;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #image-alps3 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 8;
+        grid-row-end: 9;
+        width: 98%;
+        height: 100%;
+    }
+
+    .zoomable:hover {
+        transform: scale(1.02); 
+    }
+}
+    
+
+@media screen and (max-width: 800px){
+    .reviews{
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    /*FOOTER*/
+    footer{
+        height: 700px;
+
+    }
+    .footer--text{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        justify-content: space-around;
+        align-content: space-around;
+    }
+    .footer--column-column1{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        margin-top: 50px;
+    }
+    .footer--column-column2{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        margin-top: 50px;
+    }
+    .footer--column-column3{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        margin-top: 50px;
+    }
+    .reviews {
+        display: grid;
+        border-radius: 0px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+    }
+
+    .review--column1{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        width: 70vw;
+        margin: 0 auto;
+    }
+    .review--column2{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        width: 70vw;
+        margin: 0 auto;
+    }
+    .review--column3{
+        display: block;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        width: 70vw;
+        margin: 0 auto;
+    }
+}
+
+
+@media screen and (max-width: 650px){
+    .rooms{
+        height: 750px;
+    }
+
+    .restaurant{
+        height: 750px;
+    }
+    .pool{
+        height: 750px;
+    }
+    .bar{
+        height: 750px;
+    }
+    .reservation--form{
+        width: 70%;
+        margin: 0 auto;
+        border: none;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        box-shadow: none;
+        background-color: white; 
+    }
+    .reservation--form select{
+        width: 90%;
+    }
+
+
+    .gallery--grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        width: 95%;
+    }
+    #image-room1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #image-room2 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #image-room3 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #image-bathroom {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #image-pool {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 6;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #image-restaurant {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 6;
+        grid-row-end: 7;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #image-summer1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 7;
+        grid-row-end: 8;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #image-summer2 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 8;
+        grid-row-end: 9;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #image-summer3 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 9;
+        grid-row-end: 10;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #image-winter1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 10;
+        grid-row-end: 11;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #image-winter2 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 11;
+        grid-row-end: 12;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #image-winter3 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 12;
+        grid-row-end: 13;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #image-alps1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 13;
+        grid-row-end: 14;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #image-alps2 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 14;
+        grid-row-end: 15;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #image-alps3 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 15;
+        grid-row-end: 16;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+
+@media screen and (max-width: 600px){
+    .bookForm{
+        width: 100%;
+        border: none;
+        box-shadow: none;
+        grid-template-columns: 1fr;
+        grid-template-rows: 380px 380px 380px 270px;
+    }
+
+    .checkbox--grid{
+        margin-left: 15%;
+        margin-right: auto;
+    }
+
+    .personalData{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        width: 100%;
+    }
+    .adressData{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        width: 100%;
+        
+    }
+    .accomodationdata{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        width: 100%;
+    }
+
+    #bookForm--submit{
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        width: 80%;
+        margin-top: 30px;
+    }
+    #form--price-text{
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        width: 80%;
+        
+    }
+
+    #bookForm--lastName, #bookForm--firstName, #bookForm--checkOutDate, #bookForm--checkInDate, #bookForm--postalCode, #bookForm--city, 
+    #bookForm--phone, #bookForm--email, #numberOfGuests, #bookForm--street{
+        width: 80%;
+        padding: 5px;
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        display: block;
+    }
+    #bookForm--country, #bookForm--countryCode{
+        width: calc(80% + 10px);
+        padding: 5px;
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        display: block;
+    }
+
+    #admin--menu li a{
+        font-size: 20px;
+    }
+}
+
+
+
+@media screen and (max-width: 580px){
+    .location--winter{
+        width: 100%;
+        border-radius: 0px;
+    }
+.location--summer {
+        width: 100%;
+        border-radius: 0px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .contact--form-form{
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin: 0;
+        backdrop-filter: blur(10px);
+
+    }
+    .contact--form{
+        padding-bottom: 0px;
+        padding-top: 0px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .location--winter{
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 350px 250px 250px 420px;
+        background: var(--secondary-color);
+        height: 1370px;
+        align-items: center;
+        justify-items: center;
+    }
+.location--summer {
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 350px 250px 300px 420px;
+        background: var(--secondary-color);
+        height: 1420px;
+        align-items: center;
+        justify-items: center;
+    }
+    .location--winter h2{
+        width: 100%;
+        font-size: 20px;
+        margin-left: 0;
+        margin-top: 15px;
+    }
+.location--summer h2 {
+        width: 100%;
+        font-size: 20px;
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    .location--winter p{
+        width: 80%;
+        font-size: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+.location--summer p {
+        width: 80%;
+        font-size: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .location--winter img{
+        width: 344px;
+        height: 420px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+.location--summer img {
+        width: 344px;
+        height: 420px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #skiing--text, #snowboarding--text, #apres-ski--text, #tobogganing--text{
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+#mtb--text, #hiking--text, #climbing--text, #guided--text {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #skiing--image, #snowboarding--image, #apres-ski--image, #tobogganing--image, #location--logo--winter{
+        width: 290px;
+       height: 300px;
+       margin: 0 auto;
+    }
+    #mtb, #hiking--image, #climbing--image, #guided--image, #location--logo {
+       width: 290px;
+       height: 300px;
+       margin: 0 auto;
+    }
+    .location--buttons-winter{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        margin: 0;
+        grid-row-gap: 20px;
+        grid-column-gap: 0px;
+    }
+.location--buttons {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        margin: 0;
+        grid-row-gap: 20px;
+        grid-column-gap: 0px;
+    }
+    #skiing--text, #snowboarding--text, #apres-ski--text, #tobogganing--text{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+#mtb--text, #hiking--text, #climbing--text, #guided--text {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+
+    #apres-ski{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    #tobogganing{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+#biking {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    #hiking {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    
+    #skiing{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    #snowboarding{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    #climbing {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    #guided-tour {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    .contact--grid{
+        grid-template-rows: 200px 200px 400px; 
+        height: 800px;
+        width: 100%;
+        border-radius: 0px;
+    }
+    .location--contact{
+        border-radius: 0px;
+    }
+    .contact--form-form button, .contact--form-form textarea, .contact--form-form input{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bookForm{
+        margin-top: 0px;
+    }
+
+    #admin--menu li a{
+        font-size: 20px;
+        display: block;
+        width: 100%;
+    }
+    #admin--menu{
+        display: block;
+        margin-top: 50px;
+    }
+   
+}
+
+
+
+
+
+
+
+
+
+    
+    
