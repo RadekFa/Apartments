@@ -8,18 +8,14 @@
     <link rel="icon" href="images/logo.png" type="image/png">
     <link rel="stylesheet" href="queries.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-    
 </head>
 <body>
-    
     <header>
         <nav>
             <img src="images/menuIcon.png" alt="" id="menuIcon">
-            
             <div class="menu--small--buttons">
                 <a href="bookNow.html" id="bookNow">Book Now</a>
             </div> 
-
             <a href="index.html" class="logo"><img src="images/logoWhite.png" alt="Logo"></a>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -30,12 +26,8 @@
                 <li><a href="restaurantDe.html"><img src="images/DeFlag.jpg" alt=""></a></li>
             </ul>
         </nav>
-        <div class="presentation" id="restaurant">
-            
-            
-        </div>
+        <div class="presentation" id="restaurant"></div>
         <div class="menu--small">
-
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="restaurant.html">Restaurant</a></li>
@@ -43,22 +35,16 @@
                 <li><a href="location.html">Location</a></li>
                 <li><a href="restaurantDe.html"><img src="images/DeFlag.jpg" alt=""></a></li>
             </ul>
-
         </div>
     </header>
 
     <main>
         <div class="welcome container">
             <h1 class="scroll-element">RESTAURANT AT ALPINE APARTMENTS</h1>
-            
             <p class="scroll-element">Welcome to our elegant restaurant at Alpine Apartments, where modern cuisine meets traditional Alpine influences. Our menu is carefully crafted from fresh local ingredients, offering authentic and delicious dishes. Come and enjoy a unique culinary experience in a pleasant environment with panoramic views of the Tyrolean Alps, creating the perfect atmosphere for romantic dinners, family gatherings, or special occasions.</p>
-
             <p class="scroll-element">Our talented chefs are ready to satisfy even the most demanding gourmets with their creative and meticulously prepared dishes. For wine lovers, we offer a wide selection of quality local and international wines that perfectly complement every meal.</p>
-
             <p class="scroll-element">The restaurant is designed with attention to detail and comfort, featuring comfortable seating and tasteful decor reflecting the beauty of the surrounding nature. After dinner, you can enjoy dessert or a cup of coffee in our adjacent lounge, where you can relax after a day of exploring the beauties of Sölden. Our professional and friendly staff is here to provide you with first-class service and ensure that your culinary experience is unforgettable.</p>
-
             <p class="scroll-element">Our restaurant is open daily from 10:00 AM to 12:00 PM.</p>
-
         </div>
 
         <div class="gallery scroll-element">
@@ -74,25 +60,18 @@
         </div>
 
         <div class="bar scroll-element">
-            <img src="images/bar.jpg" alt="Room" >
+            <img src="images/bar.jpg" alt="Room">
             <div class="bar--text">
                 <h2>COCKTAIL BAR</h2>
                 <p id="reservation--link">Visit our stylish bar at Alpine Apartments, where you can enjoy a wide selection of quality drinks in an elegant setting. We offer a diverse range of cocktails, local and international wines, beers, and spirits, perfect for relaxing after a day on the slopes or exploring the surrounding beauty. Our attentive staff is ready to fulfill your wishes and ensure that your evening is unforgettable.</p>
             </div>
         </div>
-        
+
         <div class="reservation scroll-element">
             <h2>RESERVATION</h2>
             <form action="" class="reservation--form">
-                <input type="text" id="name" name="name" placeholder="Full Name" required>
-                <input type="email" id="email" name="email" required placeholder="Email">
-                <input type="tel" id="phone" name="phone" required placeholder="Phone">
-                
-                <input type="text" id="reservation-date" name="date" required placeholder="Select Date">
-                
-              
+                 <input type="text" id="reservation-date" name="date" required placeholder="Select Date">
                 <input type="text" id="reservation-time" name="time" required placeholder="Select Time">
-                
                 <select name="guest" id="Number" required>
                     <option value="" disabled selected hidden>Number of guests</option>
                     <option value="1">1</option>
@@ -102,10 +81,20 @@
                     <option value="5">5</option>
                     <option value="6">6</option>
                 </select>
-                <button type="submit">MAKE A RESERVATION</button>
+                
+                <div id="restaurantAvailabilityResult">
+                    
+                </div>
+
+                <input type="text" id="name" name="name" placeholder="Full Name" required>
+                <input type="email" id="email" name="email" required placeholder="Email">
+                <input type="tel" id="phone" name="phone" required placeholder="Phone">
+               
+                <button type="submit" id="submitReservation" disabled>MAKE A RESERVATION</button>
             </form>
         </div>
     </main>
+
     <footer class="scroll-element">
         <div class="footer--text container ">
             <div class="footer--column-column1">
@@ -115,14 +104,12 @@
                 <a href="https://www.soelden.com/en/live-information/weather"  target="_blank">Weather</a>
                 <a href="#">Career</a>
             </div>
-
             <div class="footer--column-column2">
                 <p>Alpine Apartments <br>
                 B186 148, Sölden, Austria</p> 
                 <p>info@alpineapartments.com <br>
                 +43 4444 88888</p>
             </div>
-
             <div class="footer--column-column3">
                 <h4>FOLLOW US</h4>
                 <div class="footer--socials">
@@ -133,6 +120,8 @@
             </div>
         </div>
     </footer>
+    <div id="notification" class="notification hidden"></div>
+
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="js/api.js" defer></script>
     <script src="js/script.js" defer></script>

@@ -91,62 +91,6 @@ body {
         margin: 0;
     }
 
-
-    .bookForm{
-        width: 85%;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns:1fr 414px 414px 1fr;
-        grid-template-rows: 300px 270px 200px;
-        padding-left: 0;
-        padding-right: 0;
-        margin-top: 50px;
-    }
-    .personalData{
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 2;
-    }
-    .adressData{
-        grid-column-start: 3;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 2;
-    }
-    .accomodationdata{
-        grid-column-start: 2;
-        grid-column-end: 4;
-        grid-row-start: 2;
-        grid-row-end: 3;
-        width: 414px;
-    }
-
-    #bookForm--submit{
-        grid-row-start: 3;
-        grid-row-end: 4;
-        grid-column-start: 1;
-        grid-column-end: 5;
-        margin-top: 30px;
-    }
-    #form--price-text{
-        grid-row-start: 3;
-        grid-row-end: 4;
-        grid-column-start: 2;
-        grid-column-end: 4;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        margin-top: 0;
-    }
-
-    #bookForm--lastName, #bookForm--firstName{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 3;
-    }
-
     
 
 #TaC--text, #PaP--text{
@@ -312,6 +256,13 @@ body {
     }
 
 }
+
+@media screen and (max-width: 1360px){
+    .table-grid, .room-grid{
+        gap: 20px;
+    }
+}
+
 
 
 @media screen and (max-width: 1340px){
@@ -729,64 +680,6 @@ body {
 }
 
 
-
-@media screen and (max-width: 1170px) {
-   
-
-    
-    .bookForm{
-        width: 85%;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: 1fr 414px 1fr; 
-        grid-template-rows: 300px 300px 300px 260px;
-        margin-top: 50px;
-        gap: 0;
-    }
-    .personalData{
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 2;
-    }
-    .adressData{
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 2;
-        grid-row-end: 3;
-        
-    }
-    .accomodationdata{
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 3;
-        grid-row-end: 4;
-    }
-
-    #bookForm--submit{
-        grid-row-start: 4;
-        grid-row-end: 5;
-        grid-column-start: 2;
-        grid-column-end: 3;
-        align-self: end;
-    }
-    #form--price-text{
-        grid-row-start: 4;
-        grid-row-end: 5;
-        grid-column-start: 2;
-        grid-column-end: 3;
-        margin-top: 40px;
-        text-align: justify;
-    }
-
-    #bookForm--lastName, #bookForm--firstName{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 3;
-    }
-}
-
 @media screen and (max-width: 1100px){
     .reviews{
             display: grid;
@@ -818,7 +711,72 @@ body {
     }
 }
 
+@media screen and (max-width: 1030px){
+    
+    .bookForm{
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content 250px 250px 70px 120px 120px;
+        width: 500px;
+    }
+    #bookForm--lastName, #bookForm--firstName{
+    margin-top: 20px;
+    }
+    #bookForm--submit{
+        grid-row-start: 6;
+        grid-row-end: 7;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        margin-left: auto;
+        margin-right: auto;
 
+    }
+    #form--price-text{
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        margin-left: auto;
+        margin-right: auto;
+        width: 413px;
+    }
+
+    .checkbox--grid{
+        grid-row-start: 5;
+        grid-row-end: 6;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        margin-left: 15%;
+        margin-right: auto;
+    }
+
+    .personalData{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        margin-left: auto;
+        margin-right: auto;
+        width: 413px;
+    }
+    .adressData{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        margin-left: auto;
+        margin-right: auto;
+        width: 413px;
+    }
+    .accomodationdata{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        margin-left: auto;
+        margin-right: auto;
+        width: 413px;
+    }
+}
 
 
 @media screen and (max-width: 990px){
@@ -1460,6 +1418,11 @@ body {
         width: 70vw;
         margin: 0 auto;
     }
+
+    .bookForm{
+        width: 80%;
+    }
+
 }
 
 
@@ -1486,9 +1449,6 @@ body {
         padding-right: 0;
         box-shadow: none;
         background-color: white; 
-    }
-    .reservation--form select{
-        width: 90%;
     }
 
 
@@ -1641,8 +1601,10 @@ body {
         width: 100%;
         border: none;
         box-shadow: none;
+        padding-left: 0;
+        padding-right: 0;
         grid-template-columns: 1fr;
-        grid-template-rows: 380px 380px 380px 270px;
+        grid-template-rows: min-content 300px 300px 70px 120px 120px;
     }
 
     .checkbox--grid{
@@ -1651,43 +1613,26 @@ body {
     }
 
     .personalData{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 2;
         width: 100%;
     }
     .adressData{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 3;
-        width: 100%;
-        
+        width: 100%;  
     }
     .accomodationdata{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 3;
-        grid-row-end: 4;
         width: 100%;
     }
 
     #bookForm--submit{
-        grid-row-start: 4;
-        grid-row-end: 5;
-        grid-column-start: 1;
-        grid-column-end: 2;
         width: 80%;
-        margin-top: 30px;
     }
     #form--price-text{
-        grid-row-start: 4;
-        grid-row-end: 5;
-        grid-column-start: 1;
-        grid-column-end: 2;
         width: 80%;
-        
+    }
+    
+    #availableRooms{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #bookForm--lastName, #bookForm--firstName, #bookForm--checkOutDate, #bookForm--checkInDate, #bookForm--postalCode, #bookForm--city, 
@@ -1749,7 +1694,7 @@ body {
 @media screen and (max-width: 500px){
     .location--winter{
         grid-template-columns: 1fr;
-        grid-template-rows: 100px 350px 250px 250px 420px;
+        grid-template-rows: 100px 350px 250px min-content 420px;
         background: var(--secondary-color);
         height: 1370px;
         align-items: center;
@@ -1757,7 +1702,7 @@ body {
     }
 .location--summer {
         grid-template-columns: 1fr;
-        grid-template-rows: 100px 350px 250px 300px 420px;
+        grid-template-rows: 100px 350px 250px min-content 420px;
         background: var(--secondary-color);
         height: 1420px;
         align-items: center;

@@ -53,7 +53,7 @@ nav ul li a{
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 24px;
-    font-family: cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 0px;
     font-weight: 500;
     transition: transform 0.5s, color 0.5s; 
@@ -87,7 +87,7 @@ nav ul li:hover a{
     background: rgb(255, 255, 255);
     color: var(--secondary-color);
     transition: 0.5s;
-    border: 1px solid var(--secondary-color);
+    border: 1px solid rgb(255, 255, 255);
     transform: scale(1.0);
 }
 
@@ -142,7 +142,7 @@ nav ul{
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 28px;
-    font-family: cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 10px;
     font-weight: 500;
     transition: transform 0.5s, color 0.5s; 
@@ -188,7 +188,7 @@ nav .menu--small--buttons img:hover{
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 24px;
-    font-family: cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 0px;
     font-weight: 500;
     transition: transform 0.5s, color 0.5s; ;
@@ -198,7 +198,7 @@ nav .menu--small--buttons img:hover{
     background: rgb(255, 255, 255);
     color: var(--secondary-color);
     transition: 0.5s;
-    border: 1px solid var(--secondary-color);
+    border: 1px solid rgb(255, 255, 255);
     transform: scale(1.0);
 }
 
@@ -282,7 +282,7 @@ MAIN--START
     margin: 0 auto;
     margin-top: 30px;
     text-align: center;
-    font-family: cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: var(--secondary-color);
     text-shadow: var(--primary-color) 1px 1px 2px;
     font-weight: 400;
@@ -329,7 +329,7 @@ ROOMS--START
 .rooms--text h2{
     margin: 0 auto;
     text-align: left;
-    font-family: cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     font-weight: 300;
 }
@@ -377,7 +377,7 @@ POOL--START
     text-align: center;
     color: white;
     font-weight: 300;
-    font-family: cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
 }
 .pool--text p{
@@ -419,13 +419,13 @@ RESTAURANT--START
     grid-column-start: 1;
     grid-column-end: 2;
     color: white; 
-    font-family: Arial, Helvetica, sans-serif; 
+    font-family: Georgia, 'Times New Roman', Times, serif; 
 }
 
 .restaurant--text h2{
     margin: 0 auto;
     text-align: left;
-    font-family: cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     font-weight: 300;
     margin-left: 25%;
@@ -503,7 +503,7 @@ LOCATION--START
 .location--content-text h2{
     margin: 0 auto;
     text-align: left;
-    font-family: cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: var(--secondary-color);
     font-weight: 300;
 }
@@ -644,7 +644,7 @@ footer img:hover{
 
 #TaC--text h2, #PaP--text h2{
     text-align: left;
-    font-family: cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 300;
     font-size: 35px;
     background-color: white;
@@ -654,7 +654,7 @@ footer img:hover{
     width: 50%;
 }   
 #TaC--text h4, #PaP--text h4{
-    font-family: cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 300;
     padding-top: 50px;
     padding-left: 10px;
@@ -691,7 +691,7 @@ footer img:hover{
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5); /* Poloprůhledné pozadí */
+    background-color: rgba(0, 0, 0, 0.501); /* Poloprůhledné pozadí */
   }
   
   .login-modal-content {
@@ -706,6 +706,7 @@ footer img:hover{
   
   .login-modal-content h2 {
     margin-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   
   .login-modal-content input {
@@ -718,15 +719,21 @@ footer img:hover{
   
   .login-modal-content button {
     padding: 10px 20px;
-    background-color: #333;
+    background-color: var(--secondary-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     border: none;
     border-radius: 5px;
+    border: 2px solid var(--secondary-color);
     cursor: pointer;
+    transition: 0.3s;
   }
   
   .login-modal-content button:hover {
-    background-color: #555;
+    background-color: white;
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    transition: 0.3s;
   }
   
   .close {
@@ -735,10 +742,12 @@ footer img:hover{
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
+    transition: 0.3s;
   }
   
   .close:hover {
     color: black;
+    transition: 0.3s;
   }
 /***********
 FOOTER--END
@@ -831,7 +840,7 @@ bar--start
 .bar--text h2{
     margin: 0 auto;
     text-align: left;
-    font-family: cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     font-weight: 300;
     width: 80%;
@@ -868,7 +877,7 @@ reservation--start
     font-weight: 500;
     font-size: 45px;
     margin-bottom: 50px;
-    font-family: cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .reservation--form{
     border: 2px solid var(--secondary-color);
@@ -892,7 +901,7 @@ reservation--start
 }
 .reservation--form select {
     display: block;
-    width: 60%;
+    width: calc(80% + 40px);
     margin: 0 auto;
     padding: 5px;
     font-size: 20px;
@@ -901,6 +910,7 @@ reservation--start
     border-bottom: 2px solid var(--secondary-color);
     margin-top: 20px;
     padding-left: 20px;
+    text-align: left;
 }
 
 .reservation--form input:hover, .reservation--form select:hover{
@@ -937,6 +947,14 @@ reservation--start
     color: white;
     transition: 0.5s; 
 }
+
+#restaurantAvailabilityResult {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+}
 /***********
 RESTAURANT--END
 ***********/
@@ -966,7 +984,7 @@ CONTACT--START
     text-align: center;
     color: var(--secondary-color);
     font-weight: 600;
-    font-family: cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-bottom: 70px;
 }
 
@@ -1084,7 +1102,7 @@ form--start
     color: white;
     padding-bottom: 30px;
     font-weight: 600;
-    font-family: cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .contact--form-form{
@@ -1255,7 +1273,7 @@ LOCATION--START
     text-align: left;
     margin-left: 70px;
     font-weight: 600;
-    font-family: cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     margin-top: 50px;
     grid-column-start: 1;
@@ -1399,10 +1417,10 @@ winter location
 .location--winter h2{
     text-align: left;
     margin-left: 50px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     font-weight: 600;
-    font-family: cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 50px;
     grid-column-start: 2;
     grid-column-end: 4;
@@ -1506,7 +1524,7 @@ BOOKING--START
 .bookNow--title{
     margin: 0 auto;
     text-align: center;
-    font-family: cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: var(--secondary-color);
     font-weight: 300;
     width: 80%;
@@ -1517,11 +1535,11 @@ BOOKING--START
 .bookForm{
     align-items: center;
     justify-items: center;
-    width: 1340px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 300px 170px;
+    width:876px;
+    grid-template-columns: 413px 413px;
+    grid-template-rows: min-content 250px 50px 120px;
     border: 2px solid var(--secondary-color);
     padding: 50px;
     margin: 0 auto;
@@ -1542,41 +1560,44 @@ BOOKING--START
     letter-spacing: 2px;
     background-color: white;
     margin: auto;
-    margin-top: 80px;
+    margin-top: 0px;
     margin-bottom: 0px;
     box-shadow: 1px 1px 10px 1px var(--secondary-color);
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 #form--price-text{
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 3;
     align-self: start;
     font-size: 16.5px;
+    text-align: left;
 }
 
 
 .personalData{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-.adressData{
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
+    align-self: start;
+}
+.adressData{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 .accomodationdata{
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
     grid-row-start: 1;
-    grid-row-end: 2;
+    grid-row-end: 3;
+    align-self: start;
 }
 
 .bookForm input{
@@ -1605,28 +1626,6 @@ BOOKING--START
     border-bottom: 2px solid var(--secondary-color);
     margin-top: 20px;
     padding-left: 20px;
-}
-
-.bookForm textarea{
-    display: block;
-    width: 350px;
-    align-self: center;
-    justify-self: center;
-    margin: 0 auto;
-    padding: 5px;
-    font-size: 20px;
-    line-height: 20px;
-    border: none;
-    border-bottom: 2px solid var(--secondary-color);
-    margin-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    height: 85px;
-    color: var(--secondary-color);
-    resize: vertical;
-    max-height: 100px;
-    min-height: 20px;
-    background: none;
 }
 
 
@@ -1681,9 +1680,7 @@ BOOKING--START
     width: calc(50% - 42px);
     display: inline-block;
 }
-#bookForm--email{
-    width: calc(100% - 40px);
-}
+
 #numberOfGuests{
     width: 100%;
     margin-top: 50px;
@@ -1699,12 +1696,17 @@ BOOKING--START
     display: grid;
     grid-template-columns: 50px 235px;
     grid-template-rows: 1fr 1fr;
-    height: 75px;
-    margin-top: 10px;
+    height: 105px;
+    margin-top: 0px;
     align-items: center;
     margin-left: 30px;
     margin-right: auto;
     width: 258px;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    justify-self: center;
 }
 #bookForm--checkBox{ 
     grid-column-start: 1;
@@ -1769,6 +1771,29 @@ BOOKING--START
     border-bottom: none;
     transition: 0.5s;
     color: black;
+}
+
+#availableRooms {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--secondary-color);
+    font-size: 17px;
+}
+
+#availableRooms input{
+  width: 16px;
+  height: 16px;
+  accent-color: rgb(27, 158, 33);
+  margin: 0;
+  padding: 0;
+}
+
+#availableRooms label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--secondary-color);
 }
 
 
@@ -1989,7 +2014,7 @@ ADMIN_START
     margin-top: 100px;
     display: flex;
     border: 5px solid var(--secondary-color);
-    border-bottom: none;
+    border-bottom: 2px solid var(--secondary-color);
     padding-top: 10px;
     padding-bottom: 0px;
     padding-left: 10px;
@@ -2002,13 +2027,19 @@ ADMIN_START
     text-decoration: none;
     display: inline;
     list-style: none;
-    color: var(--secondary-color);
     font-size: 24px;
-    font-family: cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 0px;
     font-weight: 500;
-    transition: transform 0.5s, color 0.5s; 
+    transition: 0.3s; 
+    color: var(--secondary-color);
 }
+
+#admin--menu li a:hover{
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
 
 
 #admin--menu li{
@@ -2016,36 +2047,179 @@ ADMIN_START
     list-style: none;
     display: inline;
     padding: 10px;
-    border-radius: 15px 15px 0 0;
-    transition: 0.5s;
+    margin-bottom: 10px;
 }
 
-#admin--menu li:hover{
-    transform: scale(1.1);
-    transform:translateY(-5px);
-    transform-origin: center;
-    transition: 0.5s;
-}
+
 
 
 #admin--text {
     padding: 20px;
     background-color: #ffffff;
     border: 5px solid var(--secondary-color);
-    border-top: 2px solid var(--secondary-color);
+    border-top: none;
     border-radius: 0 0 15px 15px;
     overflow-y: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    
   }
   
 .admin-item {
     padding: 10px;
     margin-bottom: 10px;
     background-color: #ffffff;
-    border: 1px solid var(--secondary-color);
-    /* border-radius: 5px; */
+    border: 2px solid var(--secondary-color);
     font-family: Arial, Helvetica, sans-serif;
     white-space: pre-wrap;
-
 }
+.admin-item pre{
+    max-width: 100%;
+    white-space: pre-wrap;
+}
+
+.table-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(90px, auto));
+    gap: 40px;
+    justify-content: center;
+    padding: 10px;
+    border-left: 5px solid var(--secondary-color);
+    border-right: 5px solid var(--secondary-color);
+}
+
+.room-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(90px, auto));
+    gap: 40px;
+    justify-content: center;
+    padding: 10px;
+    border-left: 5px solid var(--secondary-color);
+    border-right: 5px solid var(--secondary-color);
+}
+
+
+.table-grid button, .room-grid button {
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 0;
+    border: 1px solid var(--secondary-color);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: white;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.table-grid button:hover, .room-grid button:hover {
+    border: 1px solid var(--secondary-color);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.admin-item-buttons .delete-btn {
+  background-color: #ff0901; 
+  color: white; 
+  border: 2px solid #ff0901;            
+  padding: 8px 12px;                 
+  cursor: pointer;           
+  font-size: 14px;           
+  transition: background-color 0.3s ease; 
+  opacity: 0.8;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.delete-btn:hover {
+  background-color: transparent; 
+  color: #ff0901; 
+  border: 2px solid #ff0901; 
+}
+
+.answered-btn {
+  background-color: #009213;
+  color: white;
+  border: 2px solid #009213;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  width: 165px;;
+}
+.answered-btn:hover {
+  background-color: transparent; 
+  color: #009213; 
+  border: 2px solid #009213; 
+}
+
+.admin-item.answered {
+  background-color: #f1fbf3;
+  border: 2px solid #28a745; 
+}
+
+.admin-item-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    width: 270px;
+    
+}
+
+#admin--menu li a.active {
+  border-bottom: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.room-grid button.active,
+.table-grid button.active {
+  background-color: rgb(109, 109, 109);
+  color: white;
+  border: 2px solid rgb(109, 109, 109);
+  cursor: default;
+}
+
+
+
+/*notification*/
+.notification {
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-20px);
+  padding: 15px 25px;
+  background-color: #28a746d3;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+
+.notification.show {
+  opacity: 1;
+  transform: translateX(-50%);
+}
+
+.notification.hidden {
+  display: none;
+}
+
+.notification.error {
+  background-color: #ff0901bc;
+  
+}
+
+.notification.success {
+  background-color: #28a746d3;
+}
+
+
 
 

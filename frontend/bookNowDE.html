@@ -41,117 +41,125 @@
     <main>
         <h1 class="scroll-element bookNow--title">BUCHEN SIE IHR ZIMMER</h1>
         <form action="" class="bookForm">
-            <div class="personalData scroll-element">
-                <input type="text" placeholder="Vorname" required id="bookForm--firstName">
-                <input type="text" placeholder="Nachname" required id="bookForm--lastName">
-                <input type="email" placeholder="EMail" required id="bookForm--email">
-                <select name="" id="bookForm--countryCode">
-                    <option value="+355">ALB (+355)</option>
-                    <option value="+374">ARM (+374)</option>
-                    <option value="+43">AUT (+43)</option>
-                    <option value="+994">AZE (+994)</option>
-                    <option value="+375">BLR (+375)</option>
-                    <option value="+32">BEL (+32)</option>
-                    <option value="+387">BIH (+387)</option>
-                    <option value="+359">BGR (+359)</option>
-                    <option value="+357">CYP (+357)</option>
-                    <option value="+420" selected>CZE (+420)</option>
-                    <option value="+45">DNK (+45)</option>
-                    <option value="+33">FRA (+33)</option>
-                    <option value="+995">GEO (+995)</option>
-                    <option value="+49">DEU (+49)</option>
-                    <option value="+30">GRC (+30)</option>
-                    <option value="+36">HUN (+36)</option>
-                    <option value="+353">IRL (+353)</option>
-                    <option value="+39">ITA (+39)</option>
-                    <option value="+7">KAZ (+7)</option>
-                    <option value="+383">XKX (+383)</option>
-                    <option value="+382">MNE (+382)</option>
-                    <option value="+389">MKD (+389)</option>
-                    <option value="+31">NLD (+31)</option>
-                    <option value="+351">PRT (+351)</option>
-                    <option value="+40">ROU (+40)</option>
-                    <option value="+7">RUS (+7)</option>
-                    <option value="+381">SRB (+381)</option>
-                    <option value="+421">SVK (+421)</option>
-                    <option value="+34">ESP (+34)</option>
-                    <option value="+46">SWE (+46)</option>
-                    <option value="+41">CHE (+41)</option>
-                    <option value="+90">TUR (+90)</option>
-                    <option value="+380">UKR (+380)</option>
-                    <option value="+44">GBR (+44)</option>
-                    <option value="+1">USA (+1)</option>
-                </select>
-                <input type="text" placeholder="Telefonnummer" required id="bookForm--phone">
-            </div>
 
-            <div class="adressData scroll-element">
-                <input type="text" placeholder="Stadt" required id="bookForm--city">
-                <input type="text" placeholder="Straße" required id="bookForm--street">
-                <input type="text" placeholder="Postleitzahl" required id="bookForm--postalCode">
-                <select name="" id="bookForm--country">
-                    <option value="ALB">Albania</option>
-                        <option value="ARM">Armenia</option>
-                        <option value="AUT">Austria</option>
-                        <option value="AZE">Azerbaijan</option>
-                        <option value="BLR">Belarus</option>
-                        <option value="BEL">Belgium</option>
-                        <option value="BGR">Bulgaria</option>
-                        <option value="CYP">Cyprus</option>
-                        <option value="CZE" selected>Czech Republic</option>
-                        <option value="DNK">Denmark</option>
-                        <option value="FRA">France</option>
-                        <option value="GEO">Georgia</option>
-                        <option value="DEU">Germany</option>
-                        <option value="GRC">Greece</option>
-                        <option value="HUN">Hungary</option>
-                        <option value="IRL">Ireland</option>
-                        <option value="ITA">Italy</option>
-                        <option value="KAZ">Kazakhstan</option>
-                        <option value="XKX">Kosovo</option>
-                        <option value="MNE">Montenegro</option>
-                        <option value="MKD">North Macedonia</option>
-                        <option value="NLD">Netherlands</option>
-                        <option value="PRT">Portugal</option>
-                        <option value="ROU">Romania</option>
-                        <option value="RUS">Russia</option>
-                        <option value="SRB">Serbia</option>
-                        <option value="SVK">Slovakia</option>
-                        <option value="ESP">Spain</option>
-                        <option value="SWE">Sweden</option>
-                        <option value="CHE">Switzerland</option>
-                        <option value="TUR">Turkey</option>
-                        <option value="UKR">Ukraine</option>
-                        <option value="GBR">United Kingdom</option>
-                        <option value="USA">United States</option>
-                </select>
-            </div>
+        <div class="accomodationdata scroll-element">
+            <input type="text" id="bookForm--checkInDate" placeholder="Anreisedatum" required>
+            <input type="text" id="bookForm--checkOutDate" placeholder="Abreisedatum" required>
+            <select name="" id="numberOfGuests">
+                <option value="" disabled selected hidden>Anzahl der Gäste</option>
+                <option value="1">1 Gast</option>
+                <option value="2">2 Gäste</option>
+                <option value="3">3 Gäste</option>
+                <option value="4">4 Gäste</option>
+                <option value="5">5 Gäste</option>
+                <option value="6">6 Gäste</option>
+            </select>
 
-            <div class="accomodationdata scroll-element">
-                <input type="text" id="bookForm--checkInDate" placeholder="Anreisedatum" required>
-                <input type="text" id="bookForm--checkOutDate" placeholder="Abreisedatum" required>
+            <div id="availableRooms" class="scroll-element">
                 
-                <select name="" id="numberOfGuests">
-                    <option value="" disabled selected hidden>Anzahl der Gäste</option>
-                    <option value="1">1 Gast</option>
-                    <option value="2">2 Gäste</option>
-                    <option value="3">3 Gäste</option>
-                    <option value="4">4 Gäste</option>
-                    <option value="5">5 Gäste</option>
-                    <option value="6">6 Gäste</option>
-                </select>
-                <div class="checkbox--grid">
-                    <input type="checkbox" id="bookForm--checkBox" required>
-                    <p id="bookForm--checkBox-label"> Ich stimme den <a href="TaCDE.html">Allgemeinen Geschäftsbedingungen</a> zu</p>
-
-                    <input type="checkbox" id="bookForm--checkBox2" required>
-                    <p id="bookForm--checkBox-label2">Ich stimme der <a href="TaCDE.html#PaP--link">Datenschutzerklärung</a> zu</p>
-                </div>
             </div>
+        </div>
 
-            <p id="form--price-text" class="scroll-element">Der Preis für die Unterkunft beträgt 70 EUR pro Nacht und Person. Die Zahlung erfolgt vor Ort, entweder in bar oder mit Kreditkarte. Vielen Dank für Ihr Verständnis, wir freuen uns auf Ihren Besuch!</p>
-            <input type="submit" value="Buchen Sie Ihr Zimmer" id="bookForm--submit" class="scroll-element">
-        </form>
+        <div class="personalData scroll-element">
+            <input type="text" placeholder="Vorname" required id="bookForm--firstName">
+            <input type="text" placeholder="Nachname" required id="bookForm--lastName">
+            <input type="email" placeholder="E-Mail" required id="bookForm--email">
+            <select id="bookForm--countryCode">
+                <option value="+355">ALB (+355)</option>
+                <option value="+374">ARM (+374)</option>
+                <option value="+43">AUT (+43)</option>
+                <option value="+994">AZE (+994)</option>
+                <option value="+375">BLR (+375)</option>
+                <option value="+32">BEL (+32)</option>
+                <option value="+387">BIH (+387)</option>
+                <option value="+359">BGR (+359)</option>
+                <option value="+357">CYP (+357)</option>
+                <option value="+420" selected>CZE (+420)</option>
+                <option value="+45">DNK (+45)</option>
+                <option value="+33">FRA (+33)</option>
+                <option value="+995">GEO (+995)</option>
+                <option value="+49">DEU (+49)</option>
+                <option value="+30">GRC (+30)</option>
+                <option value="+36">HUN (+36)</option>
+                <option value="+353">IRL (+353)</option>
+                <option value="+39">ITA (+39)</option>
+                <option value="+7">KAZ (+7)</option>
+                <option value="+383">XKX (+383)</option>
+                <option value="+382">MNE (+382)</option>
+                <option value="+389">MKD (+389)</option>
+                <option value="+31">NLD (+31)</option>
+                <option value="+351">PRT (+351)</option>
+                <option value="+40">ROU (+40)</option>
+                <option value="+7">RUS (+7)</option>
+                <option value="+381">SRB (+381)</option>
+                <option value="+421">SVK (+421)</option>
+                <option value="+34">ESP (+34)</option>
+                <option value="+46">SWE (+46)</option>
+                <option value="+41">CHE (+41)</option>
+                <option value="+90">TUR (+90)</option>
+                <option value="+380">UKR (+380)</option>
+                <option value="+44">GBR (+44)</option>
+                <option value="+1">USA (+1)</option>
+            </select>
+            <input type="text" placeholder="Telefonnummer" required id="bookForm--phone">
+        </div>
+
+        <div class="adressData scroll-element">
+            <input type="text" placeholder="Stadt" required id="bookForm--city">
+            <input type="text" placeholder="Straße" required id="bookForm--street">
+            <input type="text" placeholder="Postleitzahl" required id="bookForm--postalCode">
+            <select id="bookForm--country">
+                <option value="ALB">Albanien</option>
+                <option value="ARM">Armenien</option>
+                <option value="AUT">Österreich</option>
+                <option value="AZE">Aserbaidschan</option>
+                <option value="BLR">Weißrussland</option>
+                <option value="BEL">Belgien</option>
+                <option value="BGR">Bulgarien</option>
+                <option value="CYP">Zypern</option>
+                <option value="CZE" selected>Tschechien</option>
+                <option value="DNK">Dänemark</option>
+                <option value="FRA">Frankreich</option>
+                <option value="GEO">Georgien</option>
+                <option value="DEU">Deutschland</option>
+                <option value="GRC">Griechenland</option>
+                <option value="HUN">Ungarn</option>
+                <option value="IRL">Irland</option>
+                <option value="ITA">Italien</option>
+                <option value="KAZ">Kasachstan</option>
+                <option value="XKX">Kosovo</option>
+                <option value="MNE">Montenegro</option>
+                <option value="MKD">Nordmazedonien</option>
+                <option value="NLD">Niederlande</option>
+                <option value="PRT">Portugal</option>
+                <option value="ROU">Rumänien</option>
+                <option value="RUS">Russland</option>
+                <option value="SRB">Serbien</option>
+                <option value="SVK">Slowakei</option>
+                <option value="ESP">Spanien</option>
+                <option value="SWE">Schweden</option>
+                <option value="CHE">Schweiz</option>
+                <option value="TUR">Türkei</option>
+                <option value="UKR">Ukraine</option>
+                <option value="GBR">Vereinigtes Königreich</option>
+                <option value="USA">Vereinigte Staaten</option>
+            </select>
+        </div>
+
+        <div class="checkbox--grid scroll-element">
+            <input type="checkbox" id="bookForm--checkBox" required>
+            <p id="bookForm--checkBox-label">Ich stimme den <a href="TaCDE.html">Allgemeinen Geschäftsbedingungen</a> zu</p>
+            <input type="checkbox" id="bookForm--checkBox2" required>
+            <p id="bookForm--checkBox-label2">Ich stimme der <a href="TaCDE.html#PaP--link">Datenschutzrichtlinie</a> zu</p>
+        </div>
+
+        <p id="form--price-text" class="scroll-element">
+            Der Preis für die Unterkunft beträgt 70 EUR pro Nacht und Person. Die Bezahlung erfolgt vor Ort in bar oder mit Kreditkarte.
+        </p>
+
+        <input type="submit" value="Zimmer buchen" id="bookForm--submit" class="scroll-element">
+    </form>
+
 
         <div class="gallery--bookForm">
             <div class="gallery--grid">
@@ -203,6 +211,7 @@
             </div>
         </div>
     </footer>
+    <div id="notification" class="notification hidden"></div>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="js/api.js" defer></script>
     <script src="js/script.js" defer></script>

@@ -76,25 +76,31 @@
         
         <div class="reservation scroll-element">
             <h2>RESERVIERUNG</h2>
-            <form action="" class="reservation--form" id="customForm">
-                <input type="text" id="name" name="name" placeholder="Vollständiger Name" required>
-                <input type="email" id="email" name="email" required placeholder="E-Mail">
-                <input type="tel" id="phone" name="phone" required placeholder="Telefon">
-                
-                <input type="text" id="reservation-date" name="date" required placeholder="Datum auswählen">
-                <input type="text" id="reservation-time" name="time" required placeholder="Uhrzeit auswählen">
+                <form action="" class="reservation--form">
+                    <input type="text" id="reservation-date" name="date" required placeholder="Datum auswählen">
+                    <input type="text" id="reservation-time" name="time" required placeholder="Uhrzeit auswählen">
+    
+                    <select name="guest" id="Number" required>
+                        <option value="" disabled selected hidden>Anzahl der Gäste</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+    
+                        <div id="restaurantAvailabilityResult">
+                            
+                        </div>
 
-                <select name="guest" id="Number" required>
-                    <option value="" disabled selected hidden>Anzahl der Gäste</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                </select>
-                <button type="submit">RESERVIERUNG VORNEHMEN</button>
-            </form>
+                        <input type="text" id="name" name="name" placeholder="Vollständiger Name" required>
+                        <input type="email" id="email" name="email" required placeholder="E-Mail">
+                        <input type="tel" id="phone" name="phone" required placeholder="Telefonnummer">
+
+                        <button type="submit" id="submitReservation" disabled>RESERVIERUNG ABSCHLIESSEN</button>
+                    </form>
+
         </div>
     </main>
     <footer>
@@ -126,6 +132,7 @@
             </div>
         </div>
     </footer>
+    <div id="notification" class="notification hidden"></div>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="js/api.js" defer></script>
     <script src="js/script.js" defer></script>

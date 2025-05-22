@@ -8,10 +8,9 @@
     <link rel="stylesheet" href="queries.css">
     <link rel="icon" href="images/logo.png" type="image/png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-   
 </head>
 <body>
-    <header>
+ <header>
         <nav>
             <img src="images/menuIcon.png" alt="" id="menuIcon">
 
@@ -45,20 +44,33 @@
 
         </div>
     </header>
-    
+<main>
+    <h1 class="scroll-element bookNow--title">BOOK YOUR ROOM</h1>
+    <form action="" class="bookForm">
 
-    <main>
-        <h1 class="scroll-element bookNow--title">BOOK YOUR ROOM</h1>
-            <form action="" class="bookForm">
-                <div class="personalData scroll-element">
-                    
-                        <input type="et" placeholder="First Name" required id="bookForm--firstName">
-                        <input type="et" placeholder="Last Name" required       id="bookForm--lastName">
-                  
+        <div class="accomodationdata scroll-element">
+            <input type="text" id="bookForm--checkInDate" placeholder="Check-in Date" required>
+            <input type="text" id="bookForm--checkOutDate" placeholder="Check-out Date" required>
+            <select name="" id="numberOfGuests">
+                <option value="" disabled selected hidden>Number of guests</option>
+                <option value="1">1 Guest</option>
+                <option value="2">2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5">5 Guests</option>
+                <option value="6">6 Guests</option>
+            </select>
+            
+            <div id="availableRooms" class="scroll-element">
+                
+            </div>
+        </div>
 
-                    <input type="email" placeholder="Email" required id="bookForm--email">
-                    <select name="" id="bookForm--countryCode">
-                        <option value="+355">ALB (+355)</option>
+        <div class="personalData scroll-element" >
+            <input type="text" placeholder="First Name" required id="bookForm--firstName">
+            <input type="text" placeholder="Last Name" required id="bookForm--lastName">
+            <input type="email" placeholder="Email" required id="bookForm--email">
+            <select id="bookForm--countryCode"> <option value="+355">ALB (+355)</option>
                         <option value="+374">ARM (+374)</option>
                         <option value="+43">AUT (+43)</option>
                         <option value="+994">AZE (+994)</option>
@@ -92,17 +104,15 @@
                         <option value="+90">TUR (+90)</option>
                         <option value="+380">UKR (+380)</option>
                         <option value="+44">GBR (+44)</option>
-                        <option value="+1">USA (+1)</option>
-                    </select>
-                    <input type="text" placeholder="Phone Number" required id="bookForm--phone">
-                </div>
+                        <option value="+1">USA (+1)</option> </select>
+            <input type="text" placeholder="Phone Number" required id="bookForm--phone">
+        </div>
 
-                <div class="adressData scroll-element">
-                    <input type="text" placeholder="City" required id="bookForm--city">
-                    <input type="text" placeholder="Street" required id="bookForm--street">
-                    <input type="text" placeholder="Postal Code" required id="bookForm--postalCode">
-                    <select name="" id="bookForm--country">
-                        <option value="ALB">Albania</option>
+        <div class="adressData scroll-element" >
+            <input type="text" placeholder="City" required id="bookForm--city">
+            <input type="text" placeholder="Street" required id="bookForm--street">
+            <input type="text" placeholder="Postal Code" required id="bookForm--postalCode">
+            <select id="bookForm--country"><option value="ALB">Albania</option>
                         <option value="ARM">Armenia</option>
                         <option value="AUT">Austria</option>
                         <option value="AZE">Azerbaijan</option>
@@ -135,44 +145,25 @@
                         <option value="TUR">Turkey</option>
                         <option value="UKR">Ukraine</option>
                         <option value="GBR">United Kingdom</option>
-                        <option value="USA">United States</option>
-                    </select>
-                </div>
+                        <option value="USA">United States</option> </select>
+        </div>
 
-                <div class="accomodationdata scroll-element">
-                   
-                    <input type="text" id="bookForm--checkInDate" placeholder="Check-in Date" required>
-                    <input type="text" id="bookForm--checkOutDate" placeholder="Check-out Date" required>
+        <div class="checkbox--grid scroll-element">
+            <input type="checkbox" id="bookForm--checkBox" required>
+            <p id="bookForm--checkBox-label"> I agree to the <a href="TaC.html">terms and conditions</a></p>
+            <input type="checkbox" id="bookForm--checkBox2" required>
+            <p id="bookForm--checkBox-label2">I agree to the <a href="TaC.html#PaP--link">privacy policy</a></p>
+        </div>
 
-                    
-                    
-                    
-                    <select name="" id="numberOfGuests">
-                        <option value="" disabled selected hidden>Number of guests</option>
-                        <option value="1">1 Guest</option>
-                        <option value="2">2 Guests</option>
-                        <option value="3">3 Guests</option>
-                        <option value="4">4 Guests</option>
-                        <option value="5">5 Guests</option>
-                        <option value="6">6 Guests</option>
-                    </select>
-                    <div class="checkbox--grid">
-                        <input type="checkbox" id="bookForm--checkBox" required>
-                        <p id="bookForm--checkBox-label"> I agree to the <a href="TaC.html">terms and conditions</a></p>
+        <p id="form--price-text" class="scroll-element">
+            The price for accommodation is 70 EUR per night per person. Payment is to be made on-site, either in cash or by credit card.
+        </p>
 
-                        <input type="checkbox" id="bookForm--checkBox2" required>
-                        <p id="bookForm--checkBox-label2">I agree to the <a href="TaC.html#PaP--link">privacy policy</a></p>
-                    </div>
-                </div>
+        
+        <input type="submit" value="Book Room" id="bookForm--submit" class="scroll-element" >
+    </form>
 
-                <p id="form--price-text" class="scroll-element">The price for accommodation is 70 EUR per night per person. Payment is to be made on-site, either in cash or by credit card. Thank you for your understanding, and we look forward to welcoming you!</p>
-                
-
-                <input type="submit" value="Book Room" id="bookForm--submit" class="scroll-element">
-
-            </form>
-
-            <div class="gallery--bookForm">
+    <div class="gallery--bookForm">
                 <div class="gallery--grid">
                     <img src="images/room1.png" alt="Room 1" id="image-room1" class="zoomable scroll-element">
                     <img src="images/room2.png" alt="Room 2" id="image-room2" class="zoomable scroll-element">
@@ -199,9 +190,7 @@
                 </div>
 
             </div>
-        </div>
-    </main>
-
+</main>
     <footer>
         <div class="footer--text">
             <div class="footer--column-column1">
@@ -231,8 +220,10 @@
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-    <script src="js/api.js" defer></script>
-    <script src="js/script.js" defer></script>
-    </body>
+    <div id="notification" class="notification hidden"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"> </script>
+<script src="js/api.js" defer></script>
+<script src="js/script.js" defer></script>
+</body>
 </html>

@@ -144,3 +144,6 @@ INSERT INTO Rooms (number, capacity) VALUES
   (208, 3),
   (209, 4),
   (210, 5);
+
+ALTER TABLE MESSAGES
+ADD COLUMN answered BOOLEAN DEFAULT FALSE;
